@@ -1,0 +1,168 @@
+@import "_variables.scss";
+.view-id-bonnie {
+  width: 75%;
+  margin: 50px auto;
+  .views-row {
+    margin: 30px 5px 40px;
+  }
+  .users-message {
+    display: block;
+  }
+  .pager__item.is-active a {
+    color: white;
+  }
+  .is-active a  {
+    color: white;
+    padding: 2.5px 6px 4px 6.5px;
+    width: 7px;
+    line-height: 14px;
+    border: 1px solid $darkviolet;
+    background-color: $darkviolet;
+    border-radius: 50px;
+    text-align: center;
+  }
+  .pager__item {
+    padding: 10px;
+    a  {
+      border-bottom: none;
+      color: black;
+    }
+  }
+}
+.main-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid $violet;
+  border-bottom: none;
+}
+.avatar-wrapper {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-right: 15px;
+  .field__item {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+}
+.users-information {
+  margin: auto 0;
+  .field--name-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .field--name-created {
+    font-size: 14px;
+  }
+}
+.users-message-content {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  border: 2px solid $violet;
+  .picture-wrapper {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .message {
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .field--type-image img, .field--name-user-picture img {
+    margin: 0;
+  }
+}
+.users-contact {
+  border: 2px solid $violet;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  .users-email {
+    display: flex;
+    font-size: 14px;
+    .email {
+      color: $darkviolet;
+      border-bottom: none;
+    }
+  }
+  .users-mobile-number {
+    display: flex;
+    font-size: 14px;
+    .mobile-number {
+      color: $darkviolet;
+      border-bottom: none;
+    }
+  }
+}
+.bonnie-edit {
+  margin: 0 5px 0 0;
+  padding: 4px 8px;
+  background-color: $lightviolet;
+  background-image: none;
+  color: white;
+  font-size: 16px;
+  border: 1px solid $darkviolet;
+  border-radius: 3px;
+  &:hover {
+    background-color: $violet;
+    background-image: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid $darkviolet;
+  }
+}
+.bonnie-delete {
+  margin: 0 5px 0 0;
+  padding: 4px 8px;
+  background-color: $lightviolet;
+  background-image: none;
+  color: white;
+  font-size: 16px;
+  border: 1px solid $darkviolet;
+  border-radius: 3px;
+  &:hover {
+    background-color: $violet;
+    background-image: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid $darkviolet;
+  }
+}
+
