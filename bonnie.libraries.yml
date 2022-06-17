@@ -1,0 +1,8 @@
+global:
+  version: VERSION
+  css:
+    theme:
+      css/elements.css: { }
+    component:
+      css/form.css: { }
+      css/view.css: { }

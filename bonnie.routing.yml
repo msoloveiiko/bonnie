@@ -1,0 +1,8 @@
+bonnie.content:
+  path: '/bonnie'
+  defaults:
+    _controller: '\Drupal\bonnie\Controller\BonnieController::content'
+    _title: 'Guest book'
+  requirements:
+    _permission: 'access content'
+

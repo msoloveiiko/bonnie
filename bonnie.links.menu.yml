@@ -1,0 +1,13 @@
+# Bonnie menu items definition
+entity.bonnie.collection:
+  title: 'Bonnie list'
+  route_name: entity.bonnie.collection
+  description: 'List Bonnie entities'
+  parent: system.admin_structure
+  weight: 100
+
+bonnie.admin.structure.settings:
+  title: 'Bonnie settings'
+  description: 'Configure Bonnie entities'
+  route_name: bonnie.settings
+  parent: system.admin_structure

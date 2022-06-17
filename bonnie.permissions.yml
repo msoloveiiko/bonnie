@@ -1,0 +1,19 @@
+add bonnie entities:
+  title: 'Create new Bonnie entities'
+
+administer bonnie entities:
+  title: 'Administer Bonnie entities'
+  description: 'Allow to access the administration form to configure Bonnie entities.'
+  restrict access: true
+
+delete bonnie entities:
+  title: 'Delete Bonnie entities'
+
+edit bonnie entities:
+  title: 'Edit Bonnie entities'
+
+view published bonnie entities:
+  title: 'View published Bonnie entities'
+
+view unpublished bonnie entities:
+  title: 'View unpublished Bonnie entities'

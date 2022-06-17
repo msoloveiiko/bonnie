@@ -1,0 +1,5 @@
+entity.bonnie.add_form:
+  route_name: entity.bonnie.add_form
+  title: 'Add entity'
+  appears_on:
+    - entity.bonnie.collection

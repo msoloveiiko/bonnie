@@ -1,0 +1,57 @@
+{#
+/**
+ * @file bonnie.html.twig
+ * Default theme implementation to present Bonnie data.
+ *
+ * This template is used when viewing Bonnie pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_bonnie()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('bonnie') }}>
+  {% if content %}
+    <div class="users-message">
+      <div class="main-wrapper">
+        <div class="avatar-wrapper">
+          {% if content.avatar.0 %}
+            {{ content.avatar }}
+          {% else %}
+            <img src="modules/custom/bonnie/img/user_site.png" alt="avatar">
+          {% endif %}
+        </div>
+        <div class="users-information">
+          <div class="users-name">{{ content.name }}</div>
+          <div class="users-timestamp">{{ content.created }}</div>
+        </div>
+      </div>
+      <div class="users-message-content">
+        <div class="picture-wrapper">
+          {{ content.picture }}
+        </div>
+        <div class="message">{{ content.message }}</div>
+      </div>
+      <div class="users-contact">
+        <div class="users-email">{% trans %}Email:{% endtrans %}&nbsp
+          <a class="email" href="mailto:{{ content.email.0['#context'].value }}">{{ content.email }}</a>
+        </div>
+        <div class="users-mobile-number">{% trans %}Mobile number:{% endtrans %}&nbsp
+          <a class="mobile-number" href="tel:{{ content.mobile_number.0['#context'].value }}">{{ content.mobile_number }}</a>
+        </div>
+      </div>
+      {% if user.hasPermission('Edit Feedback entities') %}
+        <a class="bonnie-edit" data-dialog-type="modal" href="/admin/structure/bonnie/{{ content.id.0['#markup'] }}/edit">Edit</a>
+      {% endif %}
+      {% if user.hasPermission('Delete Feedback entities') %}
+        <a class="bonnie-delete" data-dialog-type="modal" href="/admin/structure/bonnie/{{ content.id.0['#markup'] }}/delete">Delete</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{{ attach_library('bonnie/global') }}

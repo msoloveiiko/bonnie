@@ -1,0 +1,21 @@
+# Bonnie routing definition
+bonnie.settings_tab:
+  route_name: bonnie.settings
+  title: 'Settings'
+  base_route: bonnie.settings
+
+entity.bonnie.canonical:
+  route_name: entity.bonnie.canonical
+  base_route: entity.bonnie.canonical
+  title: 'View'
+
+entity.bonnie.edit_form:
+  route_name: entity.bonnie.edit_form
+  base_route: entity.bonnie.canonical
+  title: 'Edit'
+
+entity.bonnie.delete_form:
+  route_name:  entity.bonnie.delete_form
+  base_route:  entity.bonnie.canonical
+  title: Delete
+  weight: 10
