@@ -1,8 +1,13 @@
 @import "_variables.scss";
+#form-valid-message {
+  position: absolute;
+  top: -93px;
+  width: 100%;
+}
 .bonnie-form {
   padding-bottom: 80px;
   margin: 0 auto;
-  width: 460px;
+  width: 450px;
   position: relative;
   .form-item {
     margin: 20px 0;
@@ -20,7 +25,7 @@
       background-color: $violet;
       background-image: none;
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       border: 1px solid $darkviolet;
     }
     &:active {
@@ -48,6 +53,9 @@
     width: 340px;
     margin-left: 26px;
     padding: 3px 7px;
+    &:focus-visible {
+      border: 3px solid $pink;
+    }
   }
   .description {
     text-align: center;
@@ -67,6 +75,9 @@
     width: 340px;
     margin-left: 25px;
     padding: 3px 7px;
+    &:focus-visible {
+      border: 3px solid $pink;
+    }
   }
   .description {
     text-align: center;
@@ -86,6 +97,9 @@
     width: 340px;
     margin-left: 11px;
     padding: 3px 7px;
+    &:focus-visible {
+      border: 3px solid $pink;
+    }
   }
   .description {
     text-align: center;
@@ -106,6 +120,9 @@
     resize: none;
     margin-left: 9px;
     width: 340px;
+    &:focus-visible {
+      border: 3px solid $pink;
+    }
   }
 }
 .form-item-avatar-0 {
@@ -121,6 +138,9 @@
   }
   .form-file {
     width: 340px;
+    background-color: $pink;
+    border: 1px solid $lightviolet;
+    color: black;
   }
   .description {
     margin-top: 3px;
@@ -182,16 +202,19 @@
   }
   .form-file {
     width: 340px;
+    background-color: $pink;
+    border: 1px solid $lightviolet;
+    color: black;
   }
   .description {
     margin-top: 3px;
     margin-left: 87px;
   }
-  [data-drupal-selector="edit-picture-remove-button"] {
+  [data-drupal-selector="edit-picture-0-remove-button"] {
     margin: 0;
     position: absolute;
     top: -2px;
-    left: 315px;
+    left: 348px;
     a {
       width: 100px;
       display: flex;
@@ -229,7 +252,12 @@
       border: 1px solid $darkviolet;
     }
   }
-
 }
-
+.image-widget-data {
+  .ajax-progress-throbber {
+    position: absolute;
+    top: 8px;
+    right: 3px;
+  }
+}
 

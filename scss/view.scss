@@ -33,7 +33,7 @@
   display: flex;
   width: 100%;
   padding: 10px;
-  border: 2px solid $violet;
+  border: 2px solid $lightviolet;
   border-bottom: none;
 }
 .avatar-wrapper {
@@ -81,7 +81,7 @@
   width: 100%;
   display: flex;
   padding: 10px;
-  border: 2px solid $violet;
+  border: 2px solid $lightviolet;
   .picture-wrapper {
     max-width: 200px;
     max-height: 200px;
@@ -107,7 +107,7 @@
   }
 }
 .users-contact {
-  border: 2px solid $violet;
+  border: 2px solid $lightviolet;
   border-top: none;
   display: flex;
   justify-content: space-around;
